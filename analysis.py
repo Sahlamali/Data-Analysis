@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 path = "FlagData.csv" 
 df = pd.read_csv(path)
 
-#To print the first 5 rows of the csv file
+#To print the first 5 rows of the flag dataset
 z = df.head()
 print(z)
 
-#To print the countries in Asia from the csv file
+#To print the countries in Asia from the flag dataset
 x = df[df['landmass']==5]
 x = x['name']
 print("The countries in Asia are:\n",x)
